@@ -15,6 +15,7 @@ import java.util.Scanner;
  */
 public class Principal {
 
+    private static final String CAMINHO_PALAVRAS_TXT = "C:\\Users\\Juan\\Desktop\\Projetos\\hackathondecarreiras\\src\\main\\java\\com\\mycompany\\hackathondecarreiras\\palavras.txt";
     private static ArrayList<String> todosAnagramas;
     private static Collection<String> todosCorretos;
     private static ArrayList<String> todosCorretos3;
@@ -172,7 +173,7 @@ public class Principal {
 
         //le o arquivo txt
         try {
-            BufferedReader lerArq = new BufferedReader(new FileReader("D:\\Juan\\Documents\\NetBeansProjects\\hackathondecarreiras\\src\\main\\java\\com\\mycompany\\hackathondecarreiras\\palavras.txt"));
+            BufferedReader lerArq = new BufferedReader(new FileReader(CAMINHO_PALAVRAS_TXT));
             String linha = lerArq.readLine(); 
 
             for (int i = 0; i < 50; i++) {
